@@ -1,0 +1,15 @@
+<p class="slideshow-title">Projects:</p>
+<div class="slideshow-main">
+    <app-slide [current]="currentSlide === i ? true : false" [background]="slides[i]" *ngFor="let slide of slides; let i = index"></app-slide>
+    <div class="bullet-points">
+        <span [style.opacity]="currentSlide === i ? 1 : 0.5" *ngFor="let slide of slides; let i = index">•</span>
+    </div>
+</div>
+<div class="arrows">
+    <div (click)="changeSlide(-1)" class="arrow left">
+        <p><</p>
+    </div>
+    <div (click)="changeSlide(1)" class="arrow right">
+        <p>></p>
+    </div>
+</div>

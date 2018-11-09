@@ -1,0 +1,9 @@
+@import '../../../../styles';
+.slide-main {
+    transition: $trans;
+    width: $slideWidth;
+    height: $slideHeight;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

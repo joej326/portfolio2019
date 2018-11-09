@@ -1,0 +1,60 @@
+@import '../../../styles';
+.slideshow-title {
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1vw;
+}
+
+.slideshow-main {
+    position: relative;
+    align-content: center;
+    overflow: hidden;
+    height: $slideHeight;
+    width: $slideWidth;
+    background-color: white;
+    border-radius: 0.5vw;
+
+    & .bullet-points {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 5vw;
+
+        & span {
+            transition: $trans;        
+            font-size: 2vw;
+            color: white;
+            margin: 0.5vw;
+        }
+    }
+
+.arrow {
+    cursor: pointer;
+    transition: $trans;
+    position: relative;
+    border: solid black 0.125vw;
+    border-radius: 50%;
+    background-color: rgba(gray, 0.5);
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        &.left p {
+        }
+        &.right p {
+        }
+
+        & p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 2vw;
+            color: black;
+            padding: 1vw;
+        }
+    }
+}

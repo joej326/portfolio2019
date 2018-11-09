@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+
+// variables:
+
+@import 'sass/variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+*::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit; 
+}
+  
+  html {
+    font-size: 0.7vw; 
+}
+  
+  body {
+    box-sizing: border-box; 
+}
