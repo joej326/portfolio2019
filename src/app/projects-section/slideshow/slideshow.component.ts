@@ -1,24 +1,39 @@
-import { Component, OnInit, EventEmitter, AfterViewInit, Input, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
   styleUrls: ['./slideshow.component.scss']
 })
-export class SlideshowComponent implements OnInit, AfterViewInit {
+export class SlideshowComponent implements OnInit {
 
   @Input() currentSlide: number;
 
-  slides = ['red', 'blue', 'green'];
-  @Output() emitSlides = new EventEmitter<string[]>();
+  slides = [
+    {
+      image: 'url(../../assets/images/davis-thumbnail.jpg)',
+      url: 'http://www.davis.josephmjoyce.me'
+    },
+    {
+      image: 'url(../../assets/images/peets-thumbnail.jpg)',
+      url: 'http://www.coffee.josephmjoyce.me'
+    }
+  ];
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  ngAfterViewInit() {
-    this.emitSlides.emit(this.slides);  
+  changeSlide(direction: 1 | -1) {
+    if (this.currentSlide === 0 && direction === -1) {
+      this.currentSlide = this.slides.length-1;
+    } else if (this.currentSlide === this.slides.length-1 && direction === 1) {
+      this.currentSlide = 0;
+    } else {
+      this.currentSlide += direction;
+    }
+    console.log('current slide:', this.currentSlide);
   }
 
 }

@@ -30,31 +30,26 @@
             margin: 0.5vw;
         }
     }
+}
 
-.arrow {
-    cursor: pointer;
-    transition: $trans;
-    position: relative;
-    border: solid black 0.125vw;
-    border-radius: 50%;
-    background-color: rgba(gray, 0.5);
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+
+    & .arrow {
+        padding: 0.5vw;
+        transition: $trans;
+        margin: 1vw;
+        background: $blue;  
+        cursor: pointer;
 
         &:hover {
-            background-color: $pink;
+            background: $pink;
         }
-
-        &.left p {
-        }
-        &.right p {
-        }
-
-        & p {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            font-size: 2vw;
-            color: black;
-            padding: 1vw;
+        &:active {
+            background-color: white;
         }
     }
 }

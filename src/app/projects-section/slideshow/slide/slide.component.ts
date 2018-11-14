@@ -10,6 +10,7 @@ export class SlideComponent implements OnInit, AfterViewInit {
 
   @Input() background: string;
   @Input() current: boolean;
+  @Input() url: string;  
 
   slideStyle: {background: string, visibility: string};
 
