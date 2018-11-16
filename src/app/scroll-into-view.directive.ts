@@ -9,7 +9,6 @@ export class ScrollIntoViewDirective implements AfterContentInit {
 
   ngAfterContentInit() {
     this.elem.nativeElement.scrollIntoView({behavior: 'smooth'});
-    console.log('ran');
   }
 
 }

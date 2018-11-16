@@ -1,7 +1,8 @@
   <div *ngIf="scrollInfoObj?.home" appScrollIntoView class="landing-page-main">
     <div class="header">
       <div class="logo">
-        <h4 style="display: inline-block;">I am a logo</h4>
+        <h4 style="display: inline-block;">Built With Angular</h4>
+        <div class="angular-logo"></div>
       </div>
       <ul>
         <li (click)="setScrollInfo('home')">Home</li>
@@ -20,7 +21,10 @@
   <div *ngIf="!scrollInfoObj?.home" appScrollIntoView class="landing-page-main">
     <div class="header">
       <div class="logo">
-        <h4 style="display: inline-block;">I am a logo</h4>
+        <a href="https://angular.io/" target="_blank">
+          <h4 style="display: inline-block;">Built With Angular</h4>
+          <div class="angular-logo"></div>
+        </a>
       </div>
       <ul>
         <li (click)="setScrollInfo('home')">Home</li>
