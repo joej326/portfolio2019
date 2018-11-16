@@ -1,0 +1,139 @@
+@import "../../styles"; 
+
+.contact-section-main {
+    padding: 5vw 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150deg, white, gray);
+
+    & p {
+        font-size: 5vw;
+        text-align: center;
+        margin-right: 2.5vw;
+        text-decoration: underline;
+    }
+
+    & .contact-icons {
+        margin-top: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: solid black 0.2vw;
+
+        & .icon-and-desc {
+            transition: $trans;            
+            margin-top: 5vw;
+            transform: translate(-50%, -50%);
+            margin-left: 10vw;
+            margin-right: 10vw;
+            position: relative;
+            white-space: nowrap;
+            cursor: pointer;
+            padding: 0.5vw;
+            border-radius: 2vw;
+
+            &:hover {
+                transform: translate(-50%, -50%) scale(1.25);
+                background: rgba($blue, 0.4);
+            }
+
+            & .icon {
+                width: 5vw;
+                height: 5vw;
+                // border: solid black 0.2vw;
+                background-size: contain;
+                text-align: center;
+                
+                
+    
+                &.phone {
+                    background-image: url(../../assets/images/cell-phone-icon.png);
+                }&.email {
+                    background-image: url(../../assets/images/email-icon.png);
+                }
+            }
+            & p {
+                font-size: 1vw;
+                // display: inline-block;
+                position: absolute;
+                bottom: -2vw;
+                left: 0;
+                // transform: translateX(-10%);
+
+            }
+            & .cell-text {
+                transform: translateX(-1%);   
+            }
+            & .email-text {
+                transform: translateX(-15%);   
+            }
+
+        }
+    }
+
+    & .website-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-top: 5vw;
+        // border: solid black 0.2vw;
+
+        & .icon-and-desc {
+            transition: $trans;            
+            margin-top: 5vw;
+            transform: translate(-50%, -50%);
+            margin-left: 10vw;
+            margin-right: 10vw; 
+
+            &:hover {
+                transform: translate(-50%, -50%) scale(1.5);
+                background-color: $blue;
+                border-radius: 50%;
+            }       
+
+            & .icon {
+                width: 5vw;
+                height: 5vw;
+                // border: solid black 0.2vw;
+                background-size: contain;
+                text-align: center;
+                
+                
+    
+                &.git {
+                    background-image: url(../../assets/images/github-icon.png);
+                }&.linkedin {
+                    background-image: url(../../assets/images/linkedin-icon.png);
+                }
+            }
+
+        }
+    }
+
+    // dynamic classes
+    .copy-class {
+        // background-color: red;
+        // color: blue;
+
+        &::after {
+            content: 'copied!';
+            position: absolute;
+            font-weight: bold;
+            padding: 0.5vw;
+            top: 0;
+            right: -3vw;
+            // background-color: $blue;
+            color: $blue;
+            border-radius: 2vw;
+        }
+    }
+}
+
+.spacer {
+    height: 10vw;
+
+    & ~ p {
+        font-size: 3vw;
+    }
+}
+

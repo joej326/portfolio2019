@@ -1,6 +1,9 @@
-<div class="project-section-main">
 
-  <app-slideshow [currentSlide]="currentSlide" (emitSlides)="slidesFetched($event)"></app-slideshow>
-  
+  <div *ngIf="scrollInfoObj?.projects" class="project-section-main" appScrollIntoView>
+    <app-slideshow [currentSlide]="currentSlide"></app-slideshow>
+  </div>
 
-</div>
+
+  <div *ngIf="!scrollInfoObj?.projects" class="project-section-main">
+    <app-slideshow [currentSlide]="currentSlide"></app-slideshow>
+  </div>

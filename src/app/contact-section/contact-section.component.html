@@ -1,0 +1,62 @@
+<div *ngIf="scrollInfoObj?.contact" class="contact-section-main" appScrollIntoView>
+    <p>
+        C&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;
+        C&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;E
+    </p>
+  <div class="contact-icons">
+    <div [ngClass]="{'copy-class': phoneCopied}" (click)="copyToClipboard('phone')" class="icon-and-desc">
+      <div class="icon phone"></div>
+      <p class="cell-text">415-686-5329</p>
+    </div>
+    <div [ngClass]="{'copy-class': emailCopied}" (click)="copyToClipboard('email')" class="icon-and-desc">
+      <div class="icon email"></div>
+      <p class="email-text">joej326@gmail.com</p>
+    </div>
+  </div>
+<div class="spacer"></div>
+<p>
+    F&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;
+    W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;E
+</p>
+  <div class="website-icons">
+    <div class="icon-and-desc">
+      <a href="https://github.com/joej326" target="_blank"><div class="icon git"></div></a>
+    </div>
+    <div class="icon-and-desc">
+      <a href="https://www.linkedin.com/in/joseph-joyce/" target="_blank"><div class="icon linkedin"></div></a>
+    </div>
+  </div>
+
+</div>
+
+
+<div *ngIf="!scrollInfoObj?.contact" class="contact-section-main">
+  <p>
+      C&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;
+      C&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;E
+  </p>
+<div class="contact-icons">
+  <div [ngClass]="{'copy-class': phoneCopied}" (click)="copyToClipboard('phone')" class="icon-and-desc">
+    <div class="icon phone"></div>
+    <p class="cell-text">415-686-5329</p>
+  </div>
+  <div [ngClass]="{'copy-class': emailCopied}" (click)="copyToClipboard('email')" class="icon-and-desc">
+    <div class="icon email"></div>
+    <p class="email-text">joej326@gmail.com</p>
+  </div>
+</div>
+<div class="spacer"></div>
+<p>
+  F&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;
+  W&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;E
+</p>
+<div class="website-icons">
+  <div class="icon-and-desc">
+    <a href="https://github.com/joej326" target="_blank"><div class="icon git"></div></a>
+  </div>
+  <div class="icon-and-desc">
+    <a href="https://www.linkedin.com/in/joseph-joyce/" target="_blank"><div class="icon linkedin"></div></a>
+  </div>
+</div>
+
+</div>

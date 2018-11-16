@@ -5,7 +5,7 @@
 
     clip: rect(50vw,20vw,10vw,10vw);
     text-align: center;
-    background: rgba(red, 0.5) url(../../assets/images/landing-page-background.jpg);
+    background: linear-gradient(rgba(blue, 0.3), rgba(blue, 0.3)), url(../../assets/images/landing-page-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,7 +41,8 @@
 
     & .name-section {
         
-        transform: translate(5rem, 5rem);
+        // transform: translate(5rem, 5rem);
+        margin-top: 10vw;
         
         & * {
             transition: all 0.5s;
@@ -49,10 +50,20 @@
 
         & h1 {
             font-size: 12rem;
+            text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
         }
 
         & h2 {
             font-size: 5rem;
+            text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
         }
 
         & button {

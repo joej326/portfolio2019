@@ -1,6 +1,13 @@
 @import '../../../styles';
 .slideshow-title {
     font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 1vw;
@@ -9,47 +16,66 @@
 .slideshow-main {
     position: relative;
     align-content: center;
-    overflow: hidden;
+    // overflow: hidden;
     height: $slideHeight;
     width: $slideWidth;
     background-color: white;
     border-radius: 0.5vw;
+
+    .arrows {
+        padding-top: 9vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 4vw;
+    
+        & .arrow {
+            z-index: 100;
+            padding: 0 0.6vw;
+            transition: $trans;
+            margin: 1vw;
+            // background: black;
+            opacity: 0.5;
+            cursor: pointer;
+            // border: solid black 0.25vw;
+            border-radius: 50%;
+    
+            & img {
+                width: 10vw;
+                transform: translateY(.5vw);
+            }
+    
+            &:hover {
+                opacity: 1;
+            }
+            &:active {
+                background-color: rgba(white, 0.5);
+            }
+        }
+
+        & .arrow-spacer {
+            margin: 0 28vw;
+        }
+    }
 
     & .bullet-points {
         display: flex;
         justify-content: space-around;
         align-items: center;
         position: absolute;
-        bottom: 0;
-        left: 5vw;
+        bottom: -4vw;
+        // left: 5vw;
+        transform: translateX(-50%);
+        left: 50%;
+        background-color: rgba(black, 0.5);
+        padding: 0.25vw;
+        // border-radius: 17%;
 
         & span {
             transition: $trans;        
             font-size: 2vw;
             color: white;
             margin: 0.5vw;
-        }
-    }
-}
-
-.arrows {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vw;
-
-    & .arrow {
-        padding: 0.5vw;
-        transition: $trans;
-        margin: 1vw;
-        background: $blue;  
-        cursor: pointer;
-
-        &:hover {
-            background: $pink;
-        }
-        &:active {
-            background-color: white;
         }
     }
 }

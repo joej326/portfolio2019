@@ -1,17 +1,37 @@
-<div class="landing-page-main">
-  <div class="header">
-    <div class="logo">
-      <h4 style="display: inline-block;">I am a logo</h4>
+  <div *ngIf="scrollInfoObj?.home" appScrollIntoView class="landing-page-main">
+    <div class="header">
+      <div class="logo">
+        <h4 style="display: inline-block;">I am a logo</h4>
+      </div>
+      <ul>
+        <li (click)="setScrollInfo('home')">Home</li>
+        <li (click)="setScrollInfo('projects')">Projects</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </div>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
+    <div class="name-section">
+      <h1>Joseph Joyce</h1>
+      <h2>Software Developer/Web Developer</h2>
+      <button>My Projects -></button>
+    </div>
   </div>
-  <div class="name-section">
-    <h1>Joseph Joyce</h1>
-    <h2>Software Developer/Web Developer</h2>
-    <button>My Projects -></button>
+
+  <div *ngIf="!scrollInfoObj?.home" appScrollIntoView class="landing-page-main">
+    <div class="header">
+      <div class="logo">
+        <h4 style="display: inline-block;">I am a logo</h4>
+      </div>
+      <ul>
+        <li (click)="setScrollInfo('home')">Home</li>
+        <li (click)="setScrollInfo('projects')">Projects</li>
+        <li (click)="setScrollInfo('about')">About</li>
+        <li (click)="setScrollInfo('contact')">Contact</li>
+      </ul>
+    </div>
+    <div class="name-section">
+      <h1>Joseph Joyce</h1>
+      <h2>Software Developer/Web Developer</h2>
+      <button>My Projects -></button>
+    </div>
   </div>
-</div>

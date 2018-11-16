@@ -1,14 +1,13 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import { ScrollMasterService } from '../scroll-master.service';
 import { ScrollMasterModel } from '../scroll-master-model';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  selector: 'app-about-section',
+  templateUrl: './about-section.component.html',
+  styleUrls: ['./about-section.component.scss']
 })
-export class LandingPageComponent implements OnInit {
+export class AboutSectionComponent implements OnInit {
 
   scrollInfoObj: ScrollMasterModel;
 
@@ -18,11 +17,6 @@ export class LandingPageComponent implements OnInit {
     this.scrollMasterService.scrollInfo.subscribe((data: ScrollMasterModel) => {
       this.scrollInfoObj = data;
     });
-  }
-
-  setScrollInfo(section: string) {
-    console.log('set');
-    this.scrollMasterService.getScrollInfo(section);
   }
 
 }

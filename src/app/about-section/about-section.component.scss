@@ -1,0 +1,33 @@
+@import './../../styles';
+
+.about-section-main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(white, 0.5), rgba(white, 0.5)), url(../../assets/images/about-section-back.jpg);
+    background-size: cover;
+    background-position-y: bottom;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .left-section {
+        border: solid blue 0.25vw;
+        border-radius: 50%;
+        
+        
+        & img {
+            width: 20vw;
+            border-radius: 50%;
+        }
+    }
+    & .right-section {
+        background-color: rgba(white, 0.7);
+        width: 60vw;
+        padding: 5vw;
+
+        & p {
+            font-size: 1vw;
+            line-height: 3vw;
+        }
+    }
+}
