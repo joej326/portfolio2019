@@ -1,0 +1,159 @@
+@media (max-width: 800px) {
+
+  // landing-page
+  h1 {
+    font-size: 15vw !important;
+  }
+  h2 {
+    font-size: 5vw !important;
+  }
+
+  body {
+    margin-top: -10vw;
+  }
+
+  .header {
+    height: 10vw !important;
+    width: 100vw !important;
+
+    & ul {
+      display: none !important;
+    }
+  }
+  .name-section {
+    padding-top: 30vh !important;
+
+    & button {
+      font-size: 3vh !important;
+      margin-top: 2vh !important;
+      border-radius: 2vh !important;
+      padding: 2vh !important;
+    }
+  }
+
+  // projects-section
+
+  .slideshow-main {
+    font-size: 7vw !important;
+    width: 80vw !important;
+    height: 50vw !important;
+  }
+  .slideshow-title {
+    font-size: 7vw !important;
+  }
+  .slide-main {
+    width: 80vw !important;
+    height: 50vw !important;
+  }
+  .arrows {
+    padding-top: 53vw !important;
+    z-index: 1000;
+  }
+
+  .arrow img {
+    width: 30vw !important;
+  }
+
+  .arrow-spacer {
+    margin: 5vw 5vw !important;
+  }
+
+  .bullet-points {
+    bottom: -12vw !important;
+
+    & span {
+      padding: 2vw !important;
+      font-size: 5vw !important;
+    }
+  }
+
+
+  // about section
+
+  .about-section-main {
+    display: block !important;
+  }
+
+  .left-section {
+    padding-top: 5vw;
+    border-color: transparent !important;
+  }
+
+  .left-section img {
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 50vw !important;
+    border: solid blue 0.25vw !important;
+  }
+
+  .right-section {
+    padding: 2vw !important;
+    width: 90vw !important;
+    margin-left: 50% !important;
+    margin-top: 5vw !important;
+    transform: translateX(-50%) !important;
+
+    & p {
+      font-size: 3vw !important;
+      line-height: 4vw !important
+    }
+  }
+
+
+  // contact section
+
+  .contact-section-main {
+    height: 150vh !important;
+
+    & p {
+      font-size: 6vw !important;
+    }
+  }
+
+  .contact-icons {
+    display: block !important;
+  }
+
+  .icon-and-desc {
+    // width: 10vw !important;
+    // height: 10vw !important;
+    // margin-left: 50vw !important;
+    transform: none !important;
+    margin-top: 5vw !important;
+
+    & p {
+      position: relative !important;
+      transform: none !important;
+    }
+  }
+
+  .icon {
+    transform: translateX(-50%) translateY(40%) !important;
+    margin-left: 38vw !important;
+    margin-top: 10vw;
+    width: 10vw !important;
+    height: 20vw !important;
+    background-repeat: no-repeat !important;
+  }
+
+
+  .website-icons {
+    display: block !important;
+
+    & .icon-and-desc {
+
+      &:hover {
+        background: none !important;
+      }
+
+
+      & a .icon {
+        transform: translateX(-50%) !important;
+        margin-left: 38vw !important;
+        width: 15vw !important;
+        height: 15vw !important;
+      }
+    }
+  }
+
+}
