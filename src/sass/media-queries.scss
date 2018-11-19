@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 800px) and (orientation: portrait) {
 
   // landing-page
   h1 {
@@ -13,21 +13,22 @@
   }
 
   .header {
-    height: 10vw !important;
-    width: 100vw !important;
+    // height: 10vw !important;
+    // width: 100vw !important;
+    display: none !important;
 
     & ul {
-      display: none !important;
+      // display: none !important;
     }
   }
   .name-section {
-    padding-top: 30vh !important;
+    padding-top: 60vw !important;
 
     & button {
-      font-size: 3vh !important;
-      margin-top: 2vh !important;
-      border-radius: 2vh !important;
-      padding: 2vh !important;
+      font-size: 6vw !important;
+      margin-top: 6vw !important;
+      border-radius: 6vw !important;
+      padding: 6vw !important;
     }
   }
 
@@ -103,7 +104,7 @@
   // contact section
 
   .contact-section-main {
-    height: 150vh !important;
+    // height: 150vh !important;
 
     & p {
       font-size: 6vw !important;
@@ -156,4 +157,11 @@
     }
   }
 
+}
+
+
+@media (orientation: landscape) {
+  * {
+    // padding: 100px !important;
+  }
 }
