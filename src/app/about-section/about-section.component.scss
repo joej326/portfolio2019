@@ -2,19 +2,20 @@
 
 .about-section-main {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     background-image: linear-gradient(rgba(white, 0.5), rgba(white, 0.5)), url(../../assets/images/about-section-back.jpg);
     background-size: cover;
     background-position-y: bottom;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20vw 0;
 
     & .left-section {
         border: solid blue 0.25vw;
         border-radius: 50%;
-        
-        
+
+
         & img {
             width: 20vw;
             border-radius: 50%;

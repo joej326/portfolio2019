@@ -1,9 +1,9 @@
-@import "../../styles"; 
+@import "../../styles";
 
 .contact-section-main {
     padding: 5vw 0;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     background: linear-gradient(150deg, white, gray);
 
     & p {
@@ -21,7 +21,7 @@
         // border: solid black 0.2vw;
 
         & .icon-and-desc {
-            transition: $trans;            
+            transition: $trans;
             margin-top: 5vw;
             transform: translate(-50%, -50%);
             margin-left: 10vw;
@@ -43,9 +43,9 @@
                 // border: solid black 0.2vw;
                 background-size: contain;
                 text-align: center;
-                
-                
-    
+
+
+
                 &.phone {
                     background-image: url(../../assets/images/cell-phone-icon.png);
                 }&.email {
@@ -62,10 +62,10 @@
 
             }
             & .cell-text {
-                transform: translateX(-1%);   
+                transform: translateX(-1%);
             }
             & .email-text {
-                transform: translateX(-15%);   
+                transform: translateX(-15%);
             }
 
         }
@@ -79,17 +79,17 @@
         // border: solid black 0.2vw;
 
         & .icon-and-desc {
-            transition: $trans;            
+            transition: $trans;
             margin-top: 5vw;
             transform: translate(-50%, -50%);
             margin-left: 10vw;
-            margin-right: 10vw; 
+            margin-right: 10vw;
 
             &:hover {
                 transform: translate(-50%, -50%) scale(1.5);
                 background-color: $blue;
                 border-radius: 50%;
-            }       
+            }
 
             & .icon {
                 width: 5vw;
@@ -97,9 +97,9 @@
                 // border: solid black 0.2vw;
                 background-size: contain;
                 text-align: center;
-                
-                
-    
+
+
+
                 &.git {
                     background-image: url(../../assets/images/github-icon.png);
                 }&.linkedin {

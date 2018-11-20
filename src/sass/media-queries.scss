@@ -22,7 +22,8 @@
     }
   }
   .name-section {
-    padding-top: 60vw !important;
+    padding-top: 30vw !important;
+    padding-bottom: 60vw !important;
 
     & button {
       font-size: 6vw !important;
@@ -33,6 +34,10 @@
   }
 
   // projects-section
+
+  .project-section-main {
+    padding-bottom: 55vw !important;
+  }
 
   .slideshow-main {
     font-size: 7vw !important;
@@ -160,8 +165,26 @@
 }
 
 
-@media (orientation: landscape) {
-  * {
-    // padding: 100px !important;
-  }
-}
+// @media (min-width: 1500px) and (max-width: 1900px) {
+//   .landing-page-main {
+//     // height: 150vh !important;
+//   }
+//   .name-section {
+//     padding: 10vw 0 !important;
+//     margin: 0 !important;
+//   }
+//   .project-section-main {
+//     // height: 150vh !important;
+//   }
+//   .contact-section-main {
+//     height: 200vh !important;
+//     padding-top: 50vh !important;
+//   }
+//   .about-section-main {
+//     // height: 150vh !important;
+//   }
+// }
+
+// @media (min-width: 1901px) {
+//   // height: 300vh !important;
+// }
