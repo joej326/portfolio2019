@@ -19,8 +19,16 @@ export class SlideshowComponent implements OnInit {
       url: 'http://www.coffee.josephmjoyce.me'
     },
     {
+      image: 'url(../../assets/images/longboards-thumnail.jpg)',
+      url: 'http://www.longboards.josephmjoyce.me'
+    },
+    {
       image: 'url(../../assets/images/star-wars-thumbnail.jpg)',
       url: 'http://www.starwars.josephmjoyce.me'
+    },
+    {
+      image: 'url(../../assets/images/exec-thumbnail.jpg)',
+      url: 'http://www.exec.josephmjoyce.me'
     }
   ];
 
