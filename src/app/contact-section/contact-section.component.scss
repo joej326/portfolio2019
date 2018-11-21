@@ -24,8 +24,8 @@
             transition: $trans;
             margin-top: 5vw;
             transform: translate(-50%, -50%);
-            margin-left: 10vw;
-            margin-right: 10vw;
+            margin-left: 10.5vw;
+            margin-right: 9vw;
             position: relative;
             white-space: nowrap;
             cursor: pointer;
@@ -117,11 +117,12 @@
 
         &::after {
             content: 'copied!';
+            font-size: 1vw;
             position: absolute;
             font-weight: bold;
             padding: 0.5vw;
             top: 0;
-            right: -3vw;
+            right: -4vw;
             // background-color: $blue;
             color: $blue;
             border-radius: 2vw;
