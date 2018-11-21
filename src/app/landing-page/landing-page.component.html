@@ -1,11 +1,13 @@
   <div *ngIf="scrollInfoObj?.home" appScrollIntoView class="landing-page-main">
     <div class="header">
       <div class="logo">
-        <h4 style="display: inline-block;">Built With Angular 2</h4>
-        <div class="angular-logo"></div>
+        <a href="https://angular.io/" target="_blank">
+          <h4 style="display: inline-block;">Built With Angular 2</h4>
+          <div class="angular-logo"></div>
+        </a>
       </div>
       <ul>
-        <li (click)="setScrollInfo('home')">Home</li>
+        <!-- <li (click)="setScrollInfo('home')">Home</li> -->
         <li (click)="setScrollInfo('projects')">Projects</li>
         <li>About</li>
         <li>Contact</li>
@@ -14,7 +16,7 @@
     <div class="name-section">
       <h1>Joseph Joyce</h1>
       <h2>Software Developer/Web Developer</h2>
-      <button>My Projects -></button>
+      <button>Welcome to my Portfolio!</button>
     </div>
   </div>
 
@@ -27,7 +29,7 @@
         </a>
       </div>
       <ul>
-        <li (click)="setScrollInfo('home')">Home</li>
+        <!-- <li (click)="setScrollInfo('home')">Home</li> -->
         <li (click)="setScrollInfo('projects')">Projects</li>
         <li (click)="setScrollInfo('about')">About</li>
         <li (click)="setScrollInfo('contact')">Contact</li>
@@ -36,6 +38,6 @@
     <div class="name-section">
       <h1>Joseph Joyce</h1>
       <h2>Software Developer/Web Developer</h2>
-      <button>My Projects -></button>
+      <button>Welcome to my Portfolio!</button>
     </div>
   </div>
