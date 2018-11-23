@@ -67,6 +67,17 @@
         padding-top: 10vw;
         padding-bottom: 20vw;
 
+        & .welcome-popup {
+          font-size: 2vw;
+          background-color: $blue;
+          position: absolute;
+          right: 10vw;
+          border-radius: 2vw;
+          padding: 3vw;
+          top: 15vw;
+          z-index: 100;
+        }
+
         & * {
             transition: all 0.5s;
         }

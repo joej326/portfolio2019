@@ -11,6 +11,7 @@ import { ScrollMasterModel } from '../scroll-master-model';
 export class LandingPageComponent implements OnInit {
 
   scrollInfoObj: ScrollMasterModel;
+  showWelcomePopup: boolean;
 
   constructor(private scrollMasterService: ScrollMasterService) { }
 
@@ -18,6 +19,9 @@ export class LandingPageComponent implements OnInit {
     this.scrollMasterService.scrollInfo.subscribe((data: ScrollMasterModel) => {
       this.scrollInfoObj = data;
     });
+    setTimeout(() => {
+      this.showWelcomePopup = true;
+    }, 3000);
   }
 
   setScrollInfo(section: string) {
