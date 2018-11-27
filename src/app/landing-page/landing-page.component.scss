@@ -124,6 +124,11 @@
             -webkit-appearance: none;
             -moz-appearance: none;
 
+            & a {
+              color: white;
+              text-decoration: none;
+            }
+
             &:hover {
                 background: $pink;
                 transform: translateY(-0.5rem);
