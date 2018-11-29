@@ -1,8 +1,8 @@
-<a *ngIf="current"
+<a
     [href]="url"
     target="_blank">
     <div
-        [ngStyle]="{backgroundImage: background, opacity: current ? '1' : '0'}"
+        [ngStyle]="{backgroundImage: background, opacity: current ? '1' : '0', zIndex: current ? 200 : 1}"
         class="slide-main">
     </div>
 </a>

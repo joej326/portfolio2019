@@ -10,16 +10,16 @@ export class SlideComponent implements OnInit, AfterViewInit {
 
   @Input() background: string;
   @Input() current: boolean;
-  @Input() url: string;  
+  @Input() url: string;
 
-  slideStyle: {background: string, visibility: string};
+  // slideStyle: {background: string, visibility: string};
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  ngAfterViewInit() {     
+  ngAfterViewInit() {
   }
 
   // ngDoCheck() {
@@ -33,7 +33,7 @@ export class SlideComponent implements OnInit, AfterViewInit {
   //   } else {
   //     console.log('background not equal');
   //   }
-    
+
   // }
 
 }
