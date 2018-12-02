@@ -14,7 +14,6 @@ export class SlideComponent implements OnInit, AfterViewInit {
 
   // slideStyle: {background: string, visibility: string};
 
-  // greetings ---
 
   constructor() { }
 
