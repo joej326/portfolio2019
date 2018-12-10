@@ -11,9 +11,10 @@
                 <div (click)="changeSlide(1)" class="arrow right">
                     <img src="./../../../assets/images/arrow-right.png" alt="arrow">
                 </div>
-            </div>
+        </div>
     <app-slide [current]="currentSlide === i ? true : false" [background]="slides[i].image" [url]="slides[i].url" *ngFor="let slide of slides; let i = index"></app-slide>
     <div class="bullet-points">
         <span [style.opacity]="currentSlide === i ? 1 : 0.5" *ngFor="let slide of slides; let i = index">•</span>
     </div>
+    <!-- <p>See Project Details</p> -->
 </div>

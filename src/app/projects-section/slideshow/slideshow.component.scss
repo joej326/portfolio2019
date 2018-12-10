@@ -28,7 +28,7 @@
         justify-content: space-around;
         align-items: center;
         font-size: 4vw;
-    
+
         & .arrow {
             z-index: 100;
             padding: 0 0.6vw;
@@ -39,12 +39,12 @@
             cursor: pointer;
             // border: solid black 0.25vw;
             border-radius: 50%;
-    
+
             & img {
                 width: 10vw;
                 transform: translateY(.5vw);
             }
-    
+
             &:hover {
                 opacity: 1;
             }
@@ -72,10 +72,36 @@
         // border-radius: 17%;
 
         & span {
-            transition: $trans;        
+            transition: $trans;
             font-size: 2vw;
             color: white;
             margin: 0.5vw;
         }
     }
+
+    & .hover-cover {
+      width: $slideWidth;
+      height: $slideHeight;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: black;
+      z-index: 500;
+    }
+
+    // & p {
+    //   // width: 20vw;
+    //   // height: 10vw;
+    //   padding: 2vw;
+    //   transform: translateX(-50%);
+    //   border-radius: 10%;
+    //   font-size: 1vw;
+    //   display: inline-block;
+    //   margin-top: 15vw;
+    //   margin-left: 50%;
+    //   background-color: $blue;
+    //   text-align: center;
+    //   cursor: pointer;
+    //   border: solid white 0.2vw;
+    // }
 }

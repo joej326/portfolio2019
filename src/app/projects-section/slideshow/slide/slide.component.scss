@@ -1,11 +1,13 @@
-@import '../../../../styles';
+@import "../../../../styles";
 .slide-main {
-    transition: $trans;
-    width: $slideWidth;
-    height: $slideHeight;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    border: solid black 0.15vw;
+  transition: $trans;
+  width: $slideWidth;
+  height: $slideHeight;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  border: solid black 0.15vw;
 }
+
+

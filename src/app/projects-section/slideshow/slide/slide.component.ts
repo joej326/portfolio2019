@@ -12,6 +12,7 @@ export class SlideComponent implements OnInit, AfterViewInit {
   @Input() current: boolean;
   @Input() url: string;
 
+
   // slideStyle: {background: string, visibility: string};
 
 
@@ -22,6 +23,7 @@ export class SlideComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
   }
+
 
   // ngDoCheck() {
   //   console.log('slide current slide', this.current);

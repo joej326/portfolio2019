@@ -11,6 +11,10 @@ export class SlideshowComponent implements OnInit {
 
   slides = [
     {
+      image: 'url(../../assets/images/lounge-thumbnail.jpg)',
+      url: 'http://www.lounge.josephmjoyce.me'
+    },
+    {
       image: 'url(../../assets/images/davis-thumbnail.jpg)',
       url: 'http://www.davis.josephmjoyce.me'
     },
@@ -49,7 +53,6 @@ export class SlideshowComponent implements OnInit {
     } else {
       this.currentSlide += direction;
     }
-    console.log('current slide:', this.currentSlide);
   }
 
 }
