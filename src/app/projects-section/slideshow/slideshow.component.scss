@@ -110,14 +110,33 @@
   }
 
   & .slide-description {
-    background-color: rgba(white, 0.5);
+    background-color: rgba(white, 0.7);
     padding: 2vw;
-    width: 40vw;
-    height: 15vw;
+    width: 45vw;
+    height: 22vw;
+    border: solid black 0.125vw;
+    position: relative;
 
 
     & p {
       font-size: 1vw;
+      white-space: pre-line;
+      line-height: 1.5vw;
+    }
+
+    & .slide-links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 2vw;
+      position: absolute;
+      bottom: 3vw;
+
+      & a {
+        font-weight: bold;
+        font-size: 1vw;
+        margin: 0 5vw;
+      }
     }
   }
 }

@@ -21,8 +21,12 @@
 
 </div>
 
-<div class="slide-description">
+  <div class="slide-description">
     <p>{{ slides[currentSlide].description }}</p>
+    <div class="slide-links">
+      <a [href]="slides[currentSlide].githubLink" target="_blank">View Code On Github</a>
+      <a [href]="slides[currentSlide].url" target="_blank">Visit Project</a>
+    </div>
   </div>
 </div>
 
