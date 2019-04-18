@@ -12,7 +12,16 @@ export class SlideshowComponent implements OnInit {
   slides = [
     {
       image: 'url(../../assets/images/lounge-thumbnail.jpg)',
-      url: 'http://www.lounge.josephmjoyce.me'
+      url: 'http://www.lounge.josephmjoyce.me',
+      description: `Finds low-key environments that are open late.
+
+      • Uses the Google Maps API.
+      • Written in the Angular 7 framework.
+      • Languages: Javascript, Typescript, HTML5, CSS3.
+      • User enters their desired location and submits it as a request.
+      • Uses Angular’s http module to make RESTful service requests to the Google Maps API.
+      • Uses Google Maps’ animations to animate the markers for the locations.
+      • Uses Google Maps’ querying to yield location result from Google’s database to be displayed to the user.`
     },
     {
       image: 'url(../../assets/images/davis-thumbnail.jpg)',

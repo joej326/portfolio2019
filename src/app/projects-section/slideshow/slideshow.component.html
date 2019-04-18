@@ -2,7 +2,9 @@
     P&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;J&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;
     C&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;S
 </p>
-<div class="slideshow-main">
+
+<div class="slideshow-section-flex-container">
+    <div class="slideshow-main">
         <div class="arrows">
                 <div (click)="changeSlide(-1)" class="arrow left">
                     <img src="./../../../assets/images/arrow-left.png" alt="arrow">
@@ -16,5 +18,11 @@
     <div class="bullet-points">
         <span [style.opacity]="currentSlide === i ? 1 : 0.5" *ngFor="let slide of slides; let i = index">•</span>
     </div>
-    <!-- <p>See Project Details</p> -->
+
 </div>
+
+<div class="slide-description">
+    <p>{{ slides[currentSlide].description }}</p>
+  </div>
+</div>
+
