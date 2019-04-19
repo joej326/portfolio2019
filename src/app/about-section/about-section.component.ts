@@ -15,11 +15,10 @@ export class AboutSectionComponent implements OnInit {
   At the age of 20  I received a job offer in Melbourne, FL to work my first professional job
   as a Software Developer.
 
-  The move was a big one, considering I was leaving behind my friends and family
-  to reside in Florida where I didn’t know anyone.
-  The journey has proved invaluable to me as it has taught me
-  how to live independently and make meaningful connections
-  in a world where people are becoming increasingly socially isolated.
+  The move was a big one, considering I was leaving behind my friends and family to reside in
+  Florida where I didn’t know anyone. The journey has proved invaluable to me as it has taught
+  me how to live independently and make meaningful connections in a world where people are
+  becoming increasingly socially isolated.
 
   A passion of mine besides developing software is philosophy, more particularly existentialism.
   Conversing about how one should live a meaningful life makes me giddy simply at the thought of it!
