@@ -8,6 +8,7 @@
       </div>
       <ul>
         <!-- <li (click)="setScrollInfo('home')">Home</li> -->
+        <li><a target="_blank" href="https://docs.google.com/document/d/13YuhHCjtzrHlhQUS7a-QYq3eV1ZEdGRUzydpX3n8MRI/edit?usp=sharing">Resume</a></li>
         <li (click)="setScrollInfo('projects')">Projects</li>
         <li>About</li>
         <li>Contact</li>
@@ -17,14 +18,26 @@
       <h1>Joseph Joyce</h1>
       <h2>Software Developer/Web Developer</h2>
       <button>
-        <a
-          href="https://docs.google.com/document/d/13YuhHCjtzrHlhQUS7a-QYq3eV1ZEdGRUzydpX3n8MRI/edit?usp=sharing"
-        >
-          See My Resume
-        </a>
-      </button>
+          <a
+            href="https://docs.google.com/document/d/13YuhHCjtzrHlhQUS7a-QYq3eV1ZEdGRUzydpX3n8MRI/edit?usp=sharing"
+            target="_blank"
+          >
+            See My Resume
+          </a>
+        </button>
+        <button>
+            <a
+              href="https://github.com/joej326/portfolio2019"
+              target="_blank"
+            >
+              View Website's Code
+            </a>
+          </button>
     </div>
   </div>
+
+  <!-- THIS IS A COPY OF THE ABOVE DIV TO MAKE THE AUTOSCROLLING OF THE APPLICATION FUNCIONAL -->
+  <!-- WHATEVER CHANGES MADE TO THIS COMPONENT MUST BE REFLECTED IN BOTH DIVS -->
 
   <div *ngIf="!scrollInfoObj?.home" class="landing-page-main">
     <div class="header">
@@ -36,6 +49,8 @@
       </div>
       <ul>
         <!-- <li (click)="setScrollInfo('home')">Home</li> -->
+
+        <li><a target="_blank" href="https://docs.google.com/document/d/13YuhHCjtzrHlhQUS7a-QYq3eV1ZEdGRUzydpX3n8MRI/edit?usp=sharing">Resume</a></li>
         <li (click)="setScrollInfo('projects')">Projects</li>
         <li (click)="setScrollInfo('about')">About</li>
         <li (click)="setScrollInfo('contact')">Contact</li>
@@ -53,5 +68,13 @@
             See My Resume
           </a>
         </button>
+        <button>
+            <a
+              href="https://github.com/joej326/portfolio2019"
+              target="_blank"
+            >
+              View Website's Code
+            </a>
+          </button>
     </div>
   </div>

@@ -23,13 +23,14 @@
         }
     }
     & .right-section {
-        background-color: rgba(white, 0.7);
+        background-color: rgba(white, 0.85);
         width: 60vw;
         padding: 5vw;
 
         & p {
             font-size: 1vw;
-            line-height: 3vw;
+            line-height: 1.5vw;
+            white-space: pre-line;
         }
     }
 }

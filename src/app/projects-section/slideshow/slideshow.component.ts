@@ -24,6 +24,18 @@ export class SlideshowComponent implements OnInit {
       githubLink: 'https://github.com/joej326/maps-project'
     },
     {
+      image: 'url(../../assets/images/star-wars-thumbnail.jpg)',
+      url: 'http://www.starwars.josephmjoyce.me',
+      description: `Star Wars Character App
+      •  Languages: HTML5, CSS3, SASS, Javascript, Typescript.
+      •  Built in Angular.
+      •  Makes RESTful API calls to the Star Wars API.
+      •  Displays list of characters retrieved from the API.
+      •  User can add their own character using Angular Forms.
+      •  User can delete characters from the list.`,
+      githubLink: 'https://github.com/joej326/max-angular-course2'
+    },
+    {
       image: 'url(../../assets/images/davis-thumbnail.jpg)',
       url: 'http://www.davis.josephmjoyce.me',
       description: `Clone of UC Davis’ Website in 2018.
@@ -72,18 +84,6 @@ export class SlideshowComponent implements OnInit {
       •  Makes RESTful API service calls to the Node.js backend.
       •  Express used on the backend.`,
       githubLink: 'https://github.com/joej326/personal_project'
-    },
-    {
-      image: 'url(../../assets/images/star-wars-thumbnail.jpg)',
-      url: 'http://www.starwars.josephmjoyce.me',
-      description: `Star Wars Character App
-      •  Languages: HTML5, CSS3, SASS, Javascript, Typescript.
-      •  Built in Angular.
-      •  Makes RESTful API calls to the Star Wars API.
-      •  Displays list of characters retrieved from the API.
-      •  User can add their own character using Angular Forms.
-      •  User can delete characters from the list.`,
-      githubLink: 'https://github.com/joej326/max-angular-course2'
     },
     {
       image: 'url(../../assets/images/exec-thumbnail.jpg)',
