@@ -1,141 +1,203 @@
 @import "../../styles";
 
+// .contact-section-main {
+//     padding: 5vw 0;
+//     width: 100vw;
+//     max-width: 100%;
+//     // height: 100vh;
+//     background: black;
+
+//     & p {
+//         font-size: 2vw;
+//         text-align: center;
+//         margin-right: 2.5vw;
+//         text-decoration: underline;
+//     }
+
+//     & .contact-icons {
+//         margin-top: 5vw;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         // border: solid black 0.2vw;
+
+//         & .icon-and-desc {
+//             transition: $trans;
+//             margin-top: 5vw;
+//             transform: translate(-50%, -50%);
+//             margin-left: 10.5vw;
+//             margin-right: 9vw;
+//             position: relative;
+//             white-space: nowrap;
+//             cursor: pointer;
+//             padding: 0.5vw;
+//             border-radius: 2vw;
+
+//             &:hover {
+//                 transform: translate(-50%, -50%) scale(1.25);
+//                 background: rgba($blue, 0.4);
+//             }
+
+//             & .icon {
+//                 width: 5vw;
+//                 height: 5vw;
+//                 // border: solid black 0.2vw;
+//                 background-size: contain;
+//                 text-align: center;
+
+
+
+//                 &.phone {
+//                     background-image: url(../../assets/images/cell-phone-icon.png);
+//                 }&.email {
+//                     background-image: url(../../assets/images/email-icon.png);
+//                 }
+//             }
+//             & p {
+//                 font-size: 1vw;
+//                 // display: inline-block;
+//                 position: absolute;
+//                 bottom: -2vw;
+//                 left: 0;
+//                 // transform: translateX(-10%);
+
+//             }
+//             & .cell-text {
+//                 transform: translateX(-1%);
+//             }
+//             & .email-text {
+//                 transform: translateX(-15%);
+//             }
+
+//         }
+//     }
+
+//     & .website-icons {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         // margin-top: 5vw;
+//         // border: solid black 0.2vw;
+
+//         & .icon-and-desc {
+//             transition: $trans;
+//             margin-top: 5vw;
+//             transform: translate(-50%, -50%);
+//             margin-left: 10vw;
+//             margin-right: 10vw;
+
+//             &:hover {
+//                 transform: translate(-50%, -50%) scale(1.5);
+//                 background-color: $blue;
+//                 border-radius: 50%;
+//             }
+
+//             & .icon {
+//                 width: 5vw;
+//                 height: 5vw;
+//                 // border: solid black 0.2vw;
+//                 background-size: contain;
+//                 text-align: center;
+
+
+
+//                 &.git {
+//                     background-image: url(../../assets/images/github-icon.png);
+//                 }&.linkedin {
+//                     background-image: url(../../assets/images/linkedin-icon.png);
+//                 }
+//             }
+
+//         }
+//     }
+
+//     // dynamic classes
+//     .copy-class {
+//         // background-color: red;
+//         // color: blue;
+
+//         &::after {
+//             content: 'copied!';
+//             font-size: 1vw;
+//             position: absolute;
+//             font-weight: bold;
+//             padding: 0.5vw;
+//             top: 0;
+//             right: -4vw;
+//             // background-color: $blue;
+//             color: $blue;
+//             border-radius: 2vw;
+//         }
+//     }
+// }
+
+// .spacer {
+//     height: 10vw;
+
+//     & ~ p {
+//         font-size: 2vw;
+//     }
+// }
+
+
+
 .contact-section-main {
-    padding: 5vw 0;
-    width: 100vw;
-    max-width: 100%;
-    // height: 100vh;
-    background: linear-gradient(150deg, white, gray);
+  // padding: 5vw 0;
+  padding-top: 10vw;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  // background: black;
 
-    & p {
-        font-size: 2vw;
-        text-align: center;
-        margin-right: 2.5vw;
-        text-decoration: underline;
-    }
+  & p {
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    margin: 2vw 0vw;
+  }
 
-    & .contact-icons {
-        margin-top: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // border: solid black 0.2vw;
+  & .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
 
-        & .icon-and-desc {
-            transition: $trans;
-            margin-top: 5vw;
-            transform: translate(-50%, -50%);
-            margin-left: 10.5vw;
-            margin-right: 9vw;
-            position: relative;
-            white-space: nowrap;
-            cursor: pointer;
-            padding: 0.5vw;
-            border-radius: 2vw;
+    & a {
+      text-decoration: none;
+      margin: 0 1vw;
+      display: block;
 
-            &:hover {
-                transform: translate(-50%, -50%) scale(1.25);
-                background: rgba($blue, 0.4);
-            }
-
-            & .icon {
-                width: 5vw;
-                height: 5vw;
-                // border: solid black 0.2vw;
-                background-size: contain;
-                text-align: center;
+      & .icon {
+        // background-image: linear-gradient(rgba(white, 1), rgba(white, 1)), url(../../assets/images/github-icon.png);
+        background-image: url(../../assets/images/github-icon.png);
+        background-size: contain;
+        padding: 0.5vw;
+        border-radius: 50%;
+        border: solid black 0.5vw;
+        background-color: $blue;
+        width: 5vw;
+        height: 5vw;
+        transition: all 0.5s;
+        margin: 0 auto;
 
 
 
-                &.phone {
-                    background-image: url(../../assets/images/cell-phone-icon.png);
-                }&.email {
-                    background-image: url(../../assets/images/email-icon.png);
-                }
-            }
-            & p {
-                font-size: 1vw;
-                // display: inline-block;
-                position: absolute;
-                bottom: -2vw;
-                left: 0;
-                // transform: translateX(-10%);
-
-            }
-            & .cell-text {
-                transform: translateX(-1%);
-            }
-            & .email-text {
-                transform: translateX(-15%);
-            }
-
+        &:hover {
+          transform: scale(1.5);
         }
-    }
 
-    & .website-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // margin-top: 5vw;
-        // border: solid black 0.2vw;
-
-        & .icon-and-desc {
-            transition: $trans;
-            margin-top: 5vw;
-            transform: translate(-50%, -50%);
-            margin-left: 10vw;
-            margin-right: 10vw;
-
-            &:hover {
-                transform: translate(-50%, -50%) scale(1.5);
-                background-color: $blue;
-                border-radius: 50%;
-            }
-
-            & .icon {
-                width: 5vw;
-                height: 5vw;
-                // border: solid black 0.2vw;
-                background-size: contain;
-                text-align: center;
-
-
-
-                &.git {
-                    background-image: url(../../assets/images/github-icon.png);
-                }&.linkedin {
-                    background-image: url(../../assets/images/linkedin-icon.png);
-                }
-            }
-
+        &.github {
+          background-image: url(../../assets/images/github-icon.png);
         }
-    }
-
-    // dynamic classes
-    .copy-class {
-        // background-color: red;
-        // color: blue;
-
-        &::after {
-            content: 'copied!';
-            font-size: 1vw;
-            position: absolute;
-            font-weight: bold;
-            padding: 0.5vw;
-            top: 0;
-            right: -4vw;
-            // background-color: $blue;
-            color: $blue;
-            border-radius: 2vw;
+        &.linkedin {
+          background-image: url(../../assets/images/linkedin-icon.png);
         }
+      }
+
+      & p {
+        color: white;
+      }
     }
+  }
+
 }
-
-.spacer {
-    height: 10vw;
-
-    & ~ p {
-        font-size: 2vw;
-    }
-}
-

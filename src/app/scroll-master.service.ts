@@ -19,6 +19,9 @@ export class ScrollMasterService {
       if (key === section) {
         console.log('match!');
         this.scrollInfoObj[key] = true;
+        setTimeout(() => {
+          this.scrollInfoObj[key] = false;
+        }, 2000);
       } else {
         this.scrollInfoObj[key] = false;
       }

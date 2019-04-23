@@ -1,4 +1,4 @@
-<div *ngIf="scrollInfoObj?.contact" class="contact-section-main" appScrollIntoView>
+<!-- <div *ngIf="scrollInfoObj?.contact" class="contact-section-main" appScrollIntoView>
     <p>
         C&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;N&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;
         C&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;E
@@ -59,4 +59,26 @@
   </div>
 </div>
 
-</div>
+</div> -->
+
+
+
+<div *ngIf="scrollInfoObj?.contact" class="contact-section-main" appScrollIntoView>
+    <p>Phone: 415-686-5329</p>
+    <p>Email: joej326@gmail.com</p>
+    <div class="icons-container">
+        <a href="https://github.com/joej326" target="_blank"><div class="icon github"></div><p>Github</p></a>
+        <a href="https://www.linkedin.com/in/joseph-joyce/" target="_blank"><div class="icon linkedin"></div><p>LinkedIn</p></a>
+    </div>
+
+  </div>
+
+<div *ngIf="!scrollInfoObj?.contact" class="contact-section-main">
+    <p>Phone: 415-686-5329</p>
+    <p>Email: joej326@gmail.com</p>
+    <div class="icons-container">
+        <a href="https://github.com/joej326" target="_blank"><div class="icon github"></div><p>Github</p></a>
+        <a href="https://www.linkedin.com/in/joseph-joyce/" target="_blank"><div class="icon linkedin"></div><p>LinkedIn</p></a>
+    </div>
+
+  </div>
