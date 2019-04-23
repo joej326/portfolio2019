@@ -12,4 +12,27 @@
   .contact-section-main {
     background-attachment: unset !important;
   }
+
+  .header {
+    display: none !important;
+  }
+
+  .name-section {
+
+    & h1 {
+      text-shadow:
+            -0.35vw -0.35vw 0 white,
+            0.35vw -0.35vw 0 white,
+            -0.35vw 0.35vw 0 white,
+            0.35vw 0.35vw 0 white !important;
+    }
+
+    & h2 {
+      text-shadow:
+            -0.35vw -0.35vw 0 white,
+            0.35vw -0.35vw 0 white,
+            -0.35vw 0.35vw 0 white,
+            0.35vw 0.35vw 0 white !important;
+    }
+  }
 }
