@@ -154,6 +154,16 @@
     font-size: 1vw;
     text-align: center;
     margin: 2vw 0vw;
+
+    &::-moz-selection { /* Code for Firefox */
+      color: $pink;
+      background: $blue;
+    }
+
+    &::selection {
+      color: $pink;
+      background: $blue;
+    }
   }
 
   & .icons-container {
@@ -186,6 +196,10 @@
           transform: scale(1.5);
         }
 
+        &:hover ~ p {
+          color: $pink;
+        }
+
         &.github {
           background-image: url(../../assets/images/github-icon.png);
         }
@@ -196,6 +210,7 @@
 
       & p {
         color: white;
+        transition: all 0.5s;
       }
     }
   }
