@@ -98,10 +98,10 @@
             transform: scale(0, 0);
             font-size: 6rem;
             text-shadow:
-            -1px -1px 0 white,
-            1px -1px 0 white,
-            -1px 1px 0 white,
-            1px 1px 0 white;
+            -0.1vw -0.1vw 0 white,
+            0.1vw -0.1vw 0 white,
+            -0.1vw 0.1vw 0 white,
+            0.1vw 0.1vw 0 white;
         }
 
         & h2 {
@@ -109,10 +109,10 @@
             transform: scaleY(0);
             font-size: 3rem;
             text-shadow:
-            -1px -1px 0 white,
-            1px -1px 0 white,
-            -1px 1px 0 white,
-            1px 1px 0 white;
+            -0.1vw -0.1vw 0 white,
+            0.1vw -0.1vw 0 white,
+            -0.1vw 0.1vw 0 white,
+            0.1vw 0.1vw 0 white;
         }
 
         & a {
