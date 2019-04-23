@@ -194,6 +194,7 @@
 
         &:hover {
           transform: scale(1.5);
+          background-color: $pink;
         }
 
         &:hover ~ p {
