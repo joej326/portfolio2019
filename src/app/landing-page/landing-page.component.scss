@@ -49,8 +49,16 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            & a {
+              text-decoration: none;
+              color: white;
+            }
+
             & li {
                 transition: $trans;
+                text-decoration: none;
+                color: white;
                 cursor: pointer;
                 margin: 1vw 1.5vw;
                 padding: 0.5vw 0.5vw;
@@ -61,10 +69,7 @@
                     color: black;
                 }
 
-                & a {
-                  text-decoration: none;
-                  color: white;
-                }
+
             }
         }
     }
@@ -110,7 +115,11 @@
             1px 1px 0 white;
         }
 
-        & button {
+        & a {
+          color: white;
+          text-decoration: none;
+
+          & button {
             animation: fadeIn 1s forwards 2s;
             opacity: 0;
             cursor: pointer;
@@ -130,10 +139,7 @@
             -webkit-appearance: none;
             -moz-appearance: none;
 
-            & a {
-              color: white;
-              text-decoration: none;
-            }
+
 
             &:hover {
                 background: $pink;
@@ -144,7 +150,10 @@
                 box-shadow: 0.125vw 0.125vw rgba(black, 0.7);
                 transform: translateY(-0.2rem);
             }
+           }
         }
+
+
     }
 }
 
