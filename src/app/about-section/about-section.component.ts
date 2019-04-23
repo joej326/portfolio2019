@@ -24,7 +24,7 @@ export class AboutSectionComponent implements OnInit {
   Contemplating how we can live meaningful lives makes me giddy simply thinking about it!
 
   My hobbies include:
-  coding, reading, writing, longboarding, rollerblading, going to the gym, and teaching.`;
+  coding, reading, writing, longboarding, rollerblading, fitness, and teaching.`;
 
   constructor(private scrollMasterService: ScrollMasterService) { }
 
