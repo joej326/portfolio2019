@@ -97,6 +97,7 @@
             animation: nameEntrance 1s forwards 1s;
             transform: scale(0, 0);
             font-size: 6rem;
+            padding-bottom: 1vw;
             text-shadow:
             -0.1vw -0.1vw 0 white,
             0.1vw -0.1vw 0 white,
@@ -107,6 +108,7 @@
         & h2 {
             animation: titleEntrance 0.75s forwards 1.5s;
             transform: scaleY(0);
+            padding-bottom: 1vw;
             font-size: 3rem;
             text-shadow:
             -0.1vw -0.1vw 0 white,
