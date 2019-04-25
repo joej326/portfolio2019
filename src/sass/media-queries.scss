@@ -18,21 +18,137 @@
   }
 
   .name-section {
+    padding-top: 50vw !important;
+    padding-bottom: 90vw !important;
 
     & h1 {
+      font-size: 10vw !important;
       text-shadow:
             -0.25vw -0.25vw 0 white,
             0.25vw -0.25vw 0 white,
             -0.25vw 0.25vw 0 white,
             0.25vw 0.25vw 0 white !important;
+      padding-bottom: 2vw !important;
+
     }
 
     & h2 {
+      font-size: 7vw !important;
       text-shadow:
             -0.25vw -0.25vw 0 white,
             0.25vw -0.25vw 0 white,
             -0.25vw 0.25vw 0 white,
             0.25vw 0.25vw 0 white !important;
     }
+
+    & button {
+      font-size: 4vw !important;
+      border-radius: 4rem;
+      padding: 2rem 4rem !important;
+      margin: 3rem 2rem !important;
+    }
   }
+
+
+  .slideshow-title {
+    font-size: 3.5vw !important;
+    padding-bottom: 20vw;
+  }
+
+  .slideshow-section-flex-container {
+    margin-right: 0vw !important;
+    flex-direction: column;
+    height: 115vw !important;
+  }
+
+  .project-section-main {
+    // padding-top: 20vw !important;
+    // padding-bottom: 140vw !important;
+    height: 200vw;
+  }
+
+  .slideshow-main {
+    margin-right: 0vw !important;
+    height: ($slideHeight * 2.5) + vw !important;
+    width: ($slideWidth * 2.5) + vw !important;
+
+    & .arrows {
+      padding-top: 35vw !important;
+
+      & .arrow img {
+        width: 18vw !important;
+      }
+    }
+
+  }
+
+  .slide-main {
+    height: ($slideHeight * 2.5) + vw !important;
+    width: ($slideWidth * 2.5) + vw !important;
+  }
+
+  .slide-description {
+    padding: 4vw !important;
+    width: 90vw !important;
+    height: 44vw !important;
+
+    & p {
+      font-size: 2.5vw !important;
+      line-height: 3vw !important;
+    }
+
+    & .slide-links {
+      margin-top: 2vw;
+      position: absolute;
+      bottom: 3vw;
+
+      & a {
+        font-weight: bold;
+        font-size: 3vw !important;
+        margin: 0 5vw;
+      }
+    }
+  }
+
+  .about-section-main {
+    height: 200vw;
+    padding: 0 !important;
+    justify-content: center !important;
+    flex-direction: column;
+
+    & .left-section {
+
+      & img {
+        width: 40vw !important;
+      }
+  }
+
+  & .right-section {
+    width: 80vw !important;
+    padding: 5vw;
+    margin-top: 5vw;
+
+    & p {
+        font-size: 2.5vw !important;
+        line-height: 4vw !important;
+    }
+   }
+  }
+
+
+
+  .contact-section-main {
+
+
+    & p {
+      font-size: 3vw !important;
+      margin: 2vw 0vw;
+    }
+
+
+    & .icon {
+      width: 15vw !important;
+      height: 15vw !important;
+  }
+ }
 }
