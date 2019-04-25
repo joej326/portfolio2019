@@ -24,7 +24,7 @@ export class SlideshowComponent implements OnInit {
       githubLink: 'https://github.com/joej326/maps-project'
     },
     {
-      image: 'url(../../assets/images/star-wars-thumbnail.jpg)',
+      image: 'url(../../assets/images/star-wars-thumbnail.png)',
       url: 'http://www.starwars.josephmjoyce.me',
       description: `Star Wars Character App
       •  Languages: HTML5, CSS3, SASS, Javascript, Typescript.
