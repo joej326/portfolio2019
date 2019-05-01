@@ -65,9 +65,10 @@ export class SlideshowComponent implements OnInit {
     {
       image: 'url(../../assets/images/first-game-thumbnail.jpg)',
       url: 'http://www.game.josephmjoyce.me',
-      description: `The Unhealthy Eater
-      • Simple game I built with 100% vanilla javascript.
-      • NO 3rd party code/packages/libraries. (no jQuery etc.)
+      description: `Junk Jacker
+      • Simple game I built with pure 100% vanilla javascript.
+      • I did not rely on 3rd party code/packages/libraries/frameworks.
+        (no jQuery, Angular, etc.)
 
       Controls:
       • Use arrow keys to avoid the apple slices and collect the junk food.`,
