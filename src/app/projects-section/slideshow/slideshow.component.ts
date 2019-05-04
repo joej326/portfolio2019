@@ -21,7 +21,7 @@ export class SlideshowComponent implements OnInit {
       • Uses Angular’s http module to make RESTful service requests to the Google Maps API.
       • Uses Google Maps’ animations to animate the markers for the locations.
       • Uses Google Maps’ querying to yield location result from Google’s database to be displayed to the user.`,
-      githubLink: 'https://github.com/joej326/maps-project'
+      codeLink: 'https://github.com/joej326/maps-project'
     },
     {
       image: 'url(../../assets/images/star-wars-thumbnail.png)',
@@ -33,7 +33,7 @@ export class SlideshowComponent implements OnInit {
       •  Displays list of characters retrieved from the API.
       •  User can add their own character using Angular Forms.
       •  User can delete characters from the list.`,
-      githubLink: 'https://github.com/joej326/max-angular-course2'
+      codeLink: 'https://github.com/joej326/max-angular-course2'
     },
     {
       image: 'url(../../assets/images/davis-thumbnail.jpg)',
@@ -47,7 +47,21 @@ export class SlideshowComponent implements OnInit {
       • Makes use of dropdowns.
       • Uses various CSS3 animations upon mouse interaction.
       `,
-      githubLink: 'https://github.com/joej326/UCdavis-clone'
+      codeLink: 'https://github.com/joej326/UCdavis-clone'
+    },
+    {
+      image: 'url(../../assets/images/memory-game-thumbnail.png)',
+      url: 'https://codepen.io/joej326/pen/pBbJYg',
+      description: `Memory game
+
+      • Simple game I built on one of my lunch breaks.
+      • Made entirely with Javascript.
+
+      • How to play:
+      • Click on the cards that flashed orange upon load.
+      • Refresh page to reset.
+      `,
+      codeLink: 'https://codepen.io/joej326/pen/pBbJYg'
     },
     {
       image: 'url(../../assets/images/peets-thumbnail.jpg)',
@@ -60,7 +74,7 @@ export class SlideshowComponent implements OnInit {
       • Uses various CSS3 animations upon mouse interaction.
       • Slideshow makes use of React.js componentization.
       `,
-      githubLink: 'https://github.com/joej326/peets-clone'
+      codeLink: 'https://github.com/joej326/peets-clone'
     },
     {
       image: 'url(../../assets/images/first-game-thumbnail.jpg)',
@@ -72,7 +86,7 @@ export class SlideshowComponent implements OnInit {
 
       Controls:
       • Use arrow keys to avoid the apple slices and collect the junk food.`,
-      githubLink: 'https://github.com/joej326/first-game'
+      codeLink: 'https://github.com/joej326/first-game'
     },
     {
       image: 'url(../../assets/images/longboards-thumnail.jpg)',
@@ -84,7 +98,7 @@ export class SlideshowComponent implements OnInit {
       •  Certain longboards are displayed based on user selection.
       •  Makes RESTful API service calls to the Node.js backend.
       •  Express used on the backend.`,
-      githubLink: 'https://github.com/joej326/personal_project'
+      codeLink: 'https://github.com/joej326/personal_project'
     },
     {
       image: 'url(../../assets/images/exec-thumbnail.jpg)',
@@ -96,7 +110,7 @@ export class SlideshowComponent implements OnInit {
       •  Makes RESTful API calls to the backend (backend not written by me).
       •  I created the task list where tasks can be created and dropped to any list.
       •  I also created dynamic graphs using 3rd party package charts.js. `,
-      githubLink: null
+      codeLink: null
     }
   ];
 

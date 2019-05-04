@@ -26,7 +26,7 @@
   <div class="slide-description">
     <p>{{ slides[currentSlide].description }}</p>
     <div class="slide-links">
-      <a *ngIf="slides[currentSlide].githubLink" [href]="slides[currentSlide].githubLink" target="_blank">View Code On Github</a>
+      <a *ngIf="slides[currentSlide].codeLink" [href]="slides[currentSlide].codeLink" target="_blank">View Code</a>
       <a [href]="slides[currentSlide].url" target="_blank">Visit Project</a>
     </div>
   </div>
