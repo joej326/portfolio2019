@@ -211,6 +211,15 @@
         &.linkedin {
           background-image: url(../../assets/images/linkedin-icon.png);
         }
+        &.instagram {
+          background-image: url(../../assets/images/instagram-logo.png);
+          // width: 7vw;
+          transform: scale(1.5);
+
+          &:hover {
+            transform: scale(1.75);
+          }
+        }
       }
 
       & p {

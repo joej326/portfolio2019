@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Renderer2 } from '@angular/core';
-import { Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
 import { ScrollMasterService } from '../scroll-master.service';
 import { ScrollMasterModel } from '../scroll-master-model';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact-section',
