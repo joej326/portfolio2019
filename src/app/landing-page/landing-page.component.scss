@@ -71,7 +71,7 @@
                 font-size: 1vw;
                 border-radius: 0.25vw;
                 &:hover {
-                    background-color: $pink;
+                    background-color: rgba($pink, 0.5);
                     color: black;
                 }
 

@@ -15,16 +15,16 @@ export class AboutSectionComponent implements OnInit {
   At the age of 20  I accepted a job offer in Melbourne, Florida to work my first professional job
   as a Software Developer.
 
-  The move was a big one, considering I was leaving behind my friends and family to reside in
-  Florida where I didn’t know anyone. The journey has proven invaluable to me as it taught me how
-  to live independently and meet interesting people in a world where people are becoming
-  increasingly socially isolated.
+  At this position, I worked as a front-end Angular 2 developer for two years. It was a contracting
+  position for the US government, and my primary responsibility was building features as they
+  were requested from the higher-ups as well as fixing defects. My proudest accomplishment at
+  that position is becoming the go-to guy in the office for writing unit tests in the Jasmine framework.
 
-  A passion of mine other than developing software is philosophy. More particularly existentialism.
-  Contemplating how we can live meaningful lives makes me giddy simply thinking about it!
+  I’m currently working as a full-stack developer for Veristream in Orlando, Florida.
+  I work with a small team which has helped me learn how to communicate effectively
+  and take on a lot of responsibility.
 
-  My hobbies include:
-  coding, reading, writing, longboarding, rollerblading, fitness, and teaching.`;
+  Learning and teaching are two of my most favorite things in the world and I hope we can learn from eachother!`;
 
   constructor(private scrollMasterService: ScrollMasterService) { }
 
